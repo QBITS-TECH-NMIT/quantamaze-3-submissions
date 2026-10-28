@@ -1,0 +1,42 @@
+name: Hackathon submission
+description: Submit your team's project for Quant-A-Maze 3.0
+title: "[Submission] Team name - Project name"
+labels: ["submission"]
+body:
+  - type: input
+    id: team
+    attributes:
+      label: Team name
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: Project repository link
+      description: Make the repo public, or add the organizers as collaborators.
+      placeholder: https://github.com/your-team/your-project
+    validations:
+      required: true
+  - type: input
+    id: demo
+    attributes:
+      label: Demo video or live link
+  - type: dropdown
+    id: track
+    attributes:
+      label: Track
+      options:
+        - Track 1
+        - Track 2
+    validations:
+      required: true
+  - type: textarea
+    id: members
+    attributes:
+      label: Team members (names and GitHub usernames)
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What did you build? (2-3 sentences)
